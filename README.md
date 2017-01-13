@@ -10,17 +10,23 @@ tiny docker image:
 - docker engine installed
 
 ### USAGE:
+
+TL;DR;
+```sh
+make MAIN=your_main_filename.go IMAGENAME=your_desired_imagename
+```
+### full procedure:
 1) we build the static binary
 ```sh
-make MAIN=your_main_filename.go
+make gobin MAIN=your_main_filename.go
 ```
 
 2) we build the docker image
 ```sh
-make dockerbuild 
+make dockerbuild IMAGENAME=your_desired_imagename 
 ```
 
 3) we run the docker image
 ```sh
-make run
+make run IMAGENAME=your_desired_imagename
 ```

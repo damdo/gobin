@@ -1,15 +1,15 @@
-MAIN = main.go
-
+MAIN=main.go
+IMAGENAME=gobinimg
 default: gobin dockerbuild run
 
-gobin: $(MAIN)
-	GOOS=linux GOARCH=amd64 go build -o $@ -ldflags "-w -s" $<
+gobin: 
+	GOOS=linux GOARCH=amd64 go build -o $@ -ldflags "-w -s" $(MAIN) 
 
-dockerbuild:
-	docker build -t gobin .	
+dockerbuild: 
+	docker build -t $(IMAGENAME) .	
 
 run:
-	docker run --rm -it gobin
+	docker run --rm -it $(IMAGENAME)
 
 .PHONY: clean
 clean:
