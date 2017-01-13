@@ -11,11 +11,11 @@ tiny docker image:
 
 ### USAGE:
 
-TL;DR
+#### TL;DR
 ```sh
 make MAIN=your_main_filename.go IMAGENAME=your_desired_imagename
 ```
-### full procedure:
+#### full procedure:
 1) we build the static binary
 ```sh
 make gobin MAIN=your_main_filename.go
