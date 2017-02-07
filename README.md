@@ -1,4 +1,4 @@
-## damianodonati/gobin
+## damdo/gobin
 
 :ok_hand: tiny docker image for golang apps
 
