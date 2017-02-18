@@ -2,6 +2,8 @@
 
 :ok_hand: tiny docker image for golang apps
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/damdo/gobin/blob/master/LICENSE)
+
 ### FEATURES:
 - FROM scratch, no distro
 - runs statically-linked Go bin 
