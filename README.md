@@ -19,6 +19,12 @@
 ```sh
 make MAIN=your_main_filename.go IMAGENAME=your_desired_imagename
 ```
+
+now we can run our Docker Image with:
+```sh
+docker run .... your_desired_imagename
+```
+
 #### full procedure:
 1) we build the static binary
 ```sh
