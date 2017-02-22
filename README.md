@@ -25,7 +25,7 @@ now we can run our Docker Image with:
 docker run .... your_desired_imagename
 ```
 
-#### full procedure:
+#### Full procedure:
 1) we build the static binary
 ```sh
 make gobin MAIN=your_main_filename.go
@@ -38,5 +38,5 @@ make dockerbuild IMAGENAME=your_desired_imagename
 
 3) we run the docker image
 ```sh
-make run IMAGENAME=your_desired_imagename
+docker run .... your_desired_imagename
 ```
