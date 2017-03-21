@@ -1,6 +1,8 @@
 ## damianodonati/gobin
 
-tiny docker image:
+:ok_hand: tiny docker image for golang apps
+
+### FEATURES:
 - FROM scratch, no distro
 - runs statically-linked Go bin 
 - includes 165 CA certificates for out-bound SSL connections
