@@ -5,38 +5,35 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/damdo/gobin/blob/master/LICENSE)
 
 ### FEATURES:
-- FROM scratch, no distro
+- **FROM scratch**, no distro
 - runs statically-linked Go bin 
-- includes 165 CA certificates for out-bound SSL connections
+- includes 165 CA certificates for out-bound **SSL** connections
+- **super tiny** docker image (this example **~1.72MB**)
+- **NEW!** uses multi-stage build
 
 ### PRE-REQUISITES:
-- go installed
+- ~~go installed~~
 - docker engine installed
+- no CGO dependencies
 
 ### USAGE:
 
-#### TL;DR
 ```sh
-make MAIN=your_main_filename.go IMAGENAME=your_desired_imagename
+docker build ... -t your-desired-imagename .
 ```
 
 now we can run our Docker Image with:
 ```sh
-docker run .... your_desired_imagename
+docker run ... your-desired-imagename
 ```
 
-#### Full procedure:
-1) we build the static binary
+### EXAMPLE:
+
 ```sh
-make gobin MAIN=your_main_filename.go
+docker build -t damdo/gobin .
 ```
 
-2) we build the docker image
+now we can run our Docker Image with:
 ```sh
-make dockerbuild IMAGENAME=your_desired_imagename 
-```
-
-3) we run the docker image
-```sh
-docker run .... your_desired_imagename
+docker run --rm damdo/gobin
 ```
