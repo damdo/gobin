@@ -13,7 +13,7 @@
 
 ### PRE-REQUISITES:
 - ~~go installed~~
-- docker engine installed
+- docker engine >= 17.06 CE installed
 - no CGO dependencies
 
 ### USAGE:
