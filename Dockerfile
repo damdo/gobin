@@ -8,7 +8,7 @@ RUN cd /go/src/goapp/ && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -ldfl
 # final stage
 FROM scratch
 MAINTAINER https://github.com/damdo
-COPY ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+ADD https://curl.haxx.se/ca/cacert.pem /etc/ssl/certs/ca-certificates.crt
 WORKDIR /app
 COPY --from=build-env /go/src/goapp/goapp /app/
 CMD ["/app/goapp"]
