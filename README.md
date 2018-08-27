@@ -37,3 +37,8 @@ now we can run our Docker Image with:
 ```sh
 docker run --rm damdo/gobin
 ```
+
+### LICENSE:
+This project uses third party libraries that are distributed under their own terms (See LICENSE-3RD-PARTY).
+For the rest of it the MIT License (MIT) applies. See [`LICENSE`](https://github.com/damdo/gobin/blob/master/LICENSE) for more details
+
