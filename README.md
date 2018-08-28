@@ -39,6 +39,6 @@ docker run --rm damdo/gobin
 ```
 
 ### LICENSE:
-This project uses third party libraries that are distributed under their own terms (See LICENSE-3RD-PARTY).
+This project uses third party libraries that are distributed under their own terms. See [`3RD-PARTY-LICENSE`](https://github.com/damdo/gobin/blob/master/3RD-PARTY-LICENSE)
 For the rest of it the MIT License (MIT) applies. See [`LICENSE`](https://github.com/damdo/gobin/blob/master/LICENSE) for more details
 
